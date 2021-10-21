@@ -29,13 +29,15 @@ class Ui(QWidget):
             
             pixmap = QPixmap(filename)
             self.lab_output.setPixmap(pixmap)
-
+            
         except:
             print('Valore nel campo non accettato')
             #self.lE_imponibile.setText('')
             #self.lE_iva.setText('')
             #self.lE_aliquota.setText('22')
 
+    def clear_figure(self):
+        self.lab_output.clear()
 
 
 app = QApplication(sys.argv)

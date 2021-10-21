@@ -97,8 +97,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>lE_testo</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>clear_figure()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>pB_valutaClick()</slot>
+  <slot>clear_figure()</slot>
  </slots>
 </ui>
